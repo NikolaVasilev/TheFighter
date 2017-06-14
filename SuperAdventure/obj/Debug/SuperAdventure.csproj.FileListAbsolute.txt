@@ -9,3 +9,14 @@ D:\C# fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdven
 D:\C# fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.exe
 D:\C# fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.pdb
 D:\C# fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.pdb
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\bin\Debug\Engine.dll
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\bin\Debug\Engine.pdb
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.exe
+C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.pdb
