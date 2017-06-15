@@ -20,3 +20,14 @@ C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.S
 C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
 C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.exe
 C:\Users\sashk\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.pdb
+D:\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.exe
+D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.pdb
+D:\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe
+D:\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.pdb
+D:\TheFighter\SuperAdventure\bin\Debug\Engine.dll
+D:\TheFighter\SuperAdventure\bin\Debug\Engine.pdb
+D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
