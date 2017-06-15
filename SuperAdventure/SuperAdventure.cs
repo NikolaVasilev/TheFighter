@@ -29,6 +29,14 @@ namespace SuperAdventure
 
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void SuperAdventure_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
