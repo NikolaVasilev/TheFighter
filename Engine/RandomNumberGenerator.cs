@@ -29,6 +29,7 @@ namespace Engine
 
             double randomValueInRange = Math.Floor(multiplier * range);
 
-            return (int)(minimumValue + randomValueInRange);
+            return (int) (minimumValue + randomValueInRange);
         }
+    }
 }
