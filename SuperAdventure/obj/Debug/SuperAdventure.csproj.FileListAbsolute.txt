@@ -31,3 +31,14 @@ D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyRefer
 D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
 D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
 D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.exe
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.pdb
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.pdb
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\Engine.dll
+C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\Engine.pdb

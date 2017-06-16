@@ -1,0 +1,4 @@
+C:\Users\Daniel\Source\Repos\TheFighter\Engine\bin\Release\Engine.dll
+C:\Users\Daniel\Source\Repos\TheFighter\Engine\bin\Release\Engine.pdb
+C:\Users\Daniel\Source\Repos\TheFighter\Engine\obj\Release\Engine.dll
+C:\Users\Daniel\Source\Repos\TheFighter\Engine\obj\Release\Engine.pdb

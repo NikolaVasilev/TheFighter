@@ -130,7 +130,6 @@
             this.label5.Size = new System.Drawing.Size(89, 17);
             this.label5.TabIndex = 8;
             this.label5.Text = "Select action";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // cboWeapons
             // 
@@ -294,7 +293,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SuperAdventure";
             this.Text = "The Fighter";
-            this.Load += new System.EventHandler(this.SuperAdventure_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).EndInit();
             this.ResumeLayout(false);
