@@ -42,3 +42,4 @@ C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.
 C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.pdb
 C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\Engine.dll
 C:\Users\Daniel\Source\Repos\TheFighter\SuperAdventure\bin\Debug\Engine.pdb
+D:\C# fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
