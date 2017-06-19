@@ -8,10 +8,13 @@ namespace Engine
 {
     public class World
     {
-        public static readonly List<Item> Items = new List<Item>();
-        public static readonly List<Monster> Monsters = new List<Monster>();
-        public static readonly List<Quest> Quests = new List<Quest>();
-        public static readonly List<Location> Locations = new List<Location>();
+        private static readonly List<Item> _items = new List<Item>();
+        private static readonly List<Monster> _monsters = new List<Monster>();
+        private static readonly List<Quest> _quests = new List<Quest>();
+        private static readonly List<Location> _locations = new List<Location>();
+
+
+        public const int UNSELLABLE_ITEM_PRICE = -1;
 
         public const int ITEM_ID_RUSTY_SWORD = 1;
         public const int ITEM_ID_RAT_TAIL = 2;
@@ -44,7 +47,6 @@ namespace Engine
         public const int LOCATION_ID_SPIDER_FIELD = 9;
 
 
-        public const int UNSELLABLE_ITEM_PRICE = -1;
 
         static World()
         {
@@ -56,17 +58,17 @@ namespace Engine
 
         private static void PopulateItems()
         {
-            Items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5, 5));
-            Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails", 1));
-            Items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur", 1));
-            Items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs", 2));
-            Items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins", 3));
-            Items.Add(new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 3, 10, 10));
-            Items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5, 3));
-            Items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs", 1));
-            Items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks", 1));
-            Items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
-            Items.Add(new Item(ITEM_ID_BOTTLE_OF_ROM, "Bottle of rom", "Bottles of rom", 2));
+            _items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5, 5));
+            _items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails", 1));
+            _items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur", 1));
+            _items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs", 2));
+            _items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins", 3));
+            _items.Add(new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 3, 10, 10));
+            _items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5, 3));
+            _items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs", 1));
+            _items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks", 1));
+            _items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
+            _items.Add(new Item(ITEM_ID_BOTTLE_OF_ROM, "Bottle of rom", "Bottles of rom", 2));
         }
 
         private static void PopulateMonsters()
@@ -86,10 +88,10 @@ namespace Engine
             Monster drunkIdiot = new Monster(MONSTER_ID_DRUNK_IDIOT, "Drunk idiot", 6, 10, 15, 8, 10);
             drunkIdiot.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BOTTLE_OF_ROM), 75, true));
 
-            Monsters.Add(rat);
-            Monsters.Add(snake);
-            Monsters.Add(giantSpider);
-            Monsters.Add(drunkIdiot);
+            _monsters.Add(rat);
+            _monsters.Add(snake);
+            _monsters.Add(giantSpider);
+            _monsters.Add(drunkIdiot);
         }
 
         private static void PopulateQuests()
@@ -114,8 +116,8 @@ namespace Engine
 
             clearFarmersField.RewardItem = ItemByID(ITEM_ID_ADVENTURER_PASS);
 
-            Quests.Add(clearAlchemistGarden);
-            Quests.Add(clearFarmersField);
+            _quests.Add(clearAlchemistGarden);
+            _quests.Add(clearFarmersField);
         }
 
         private static void PopulateLocations()
@@ -135,22 +137,23 @@ namespace Engine
             alchemistHut.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_ALCHEMIST_GARDEN);
 
             Location alchemistsGarden = new Location(LOCATION_ID_ALCHEMISTS_GARDEN, "Alchemist's garden", "Many plants are growing here.");
-            alchemistsGarden.MonsterLivingHere = MonsterByID(MONSTER_ID_RAT);
-           
+            alchemistsGarden.AddMonster(MONSTER_ID_RAT, 60);
+            alchemistsGarden.AddMonster(MONSTER_ID_SNAKE, 40);
+
 
             Location farmhouse = new Location(LOCATION_ID_FARMHOUSE, "Farmhouse", "There is a small farmhouse, with a farmer in front.");
             farmhouse.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_FARMERS_FIELD);
 
             Location farmersField = new Location(LOCATION_ID_FARM_FIELD, "Farmer's field", "You see rows of vegetables growing here.");
-            farmersField.MonsterLivingHere = MonsterByID(MONSTER_ID_SNAKE);
+            farmersField.AddMonster(MONSTER_ID_SNAKE, 100);
 
             Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "There is a large, tough-looking guard here.", ItemByID(ITEM_ID_ADVENTURER_PASS));
 
             Location bridge = new Location(LOCATION_ID_BRIDGE, "Bridge", "A stone bridge crosses a wide river.");
-            bridge.MonsterLivingHere = MonsterByID(MONSTER_ID_DRUNK_IDIOT);
+            farmersField.AddMonster(MONSTER_ID_DRUNK_IDIOT, 100);
 
             Location spiderField = new Location(LOCATION_ID_SPIDER_FIELD, "Forest", "You see spider webs covering covering the trees in this forest.");
-            spiderField.MonsterLivingHere = MonsterByID(MONSTER_ID_GIANT_SPIDER);
+            spiderField.AddMonster(MONSTER_ID_GIANT_SPIDER, 100);
 
             // Link the locations together
             home.LocationToNorth = townSquare;
@@ -179,67 +182,35 @@ namespace Engine
             spiderField.LocationToWest = bridge;
 
             // Add the locations to the static list
-            Locations.Add(home);
-            Locations.Add(townSquare);
-            Locations.Add(guardPost);
-            Locations.Add(alchemistHut);
-            Locations.Add(alchemistsGarden);
-            Locations.Add(farmhouse);
-            Locations.Add(farmersField);
-            Locations.Add(bridge);
-            Locations.Add(spiderField);
+            _locations.Add(home);
+            _locations.Add(townSquare);
+            _locations.Add(guardPost);
+            _locations.Add(alchemistHut);
+            _locations.Add(alchemistsGarden);
+            _locations.Add(farmhouse);
+            _locations.Add(farmersField);
+            _locations.Add(bridge);
+            _locations.Add(spiderField);
         }
 
         public static Item ItemByID(int id)
         {
-            foreach (Item item in Items)
-            {
-                if (item.ID == id)
-                {
-                    return item;
-                }
-            }
-
-            return null;
+            return _items.SingleOrDefault(x => x.ID == id);
         }
 
         public static Monster MonsterByID(int id)
         {
-            foreach (Monster monster in Monsters)
-            {
-                if (monster.ID == id)
-                {
-                    return monster;
-                }
-            }
-
-            return null;
+            return _monsters.SingleOrDefault(x => x.ID == id);
         }
 
         public static Quest QuestByID(int id)
         {
-            foreach (Quest quest in Quests)
-            {
-                if (quest.ID == id)
-                {
-                    return quest;
-                }
-            }
-
-            return null;
+            return _quests.SingleOrDefault(x => x.ID == id);
         }
 
         public static Location LocationByID(int id)
         {
-            foreach (Location location in Locations)
-            {
-                if (location.ID == id)
-                {
-                    return location;
-                }
-            }
-
-            return null;
+            return _locations.SingleOrDefault(x => x.ID == id);
         }
     }
 }

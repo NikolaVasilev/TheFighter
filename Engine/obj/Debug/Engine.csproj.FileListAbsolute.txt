@@ -18,3 +18,8 @@ C:\Users\Daniel\Source\Repos\TheFighter\Engine\bin\Debug\Engine.pdb
 C:\Users\Daniel\Source\Repos\TheFighter\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
 C:\Users\Daniel\Source\Repos\TheFighter\Engine\obj\Debug\Engine.dll
 C:\Users\Daniel\Source\Repos\TheFighter\Engine\obj\Debug\Engine.pdb
+D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\Engine\bin\Debug\Engine.dll
+D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\Engine\bin\Debug\Engine.pdb
+D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\Engine\obj\Debug\Engine.dll
+D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\Engine\obj\Debug\Engine.pdb
