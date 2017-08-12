@@ -9,3 +9,6 @@ D:\C# fundamentals\TheFighter\SuperAdventure\SuperAdventureConsole\obj\Debug\Sup
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventureConsole\bin\Debug\SuperAdventureConsole.exe.config
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.exe
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.pdb
+D:\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.csprojResolveAssemblyReference.cache
+D:\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.exe
+D:\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.pdb

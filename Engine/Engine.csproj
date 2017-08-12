@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\SoundPath.cs" />
     <Compile Include="InventoryItem.cs" />
     <Compile Include="LivingCreature.cs" />
     <Compile Include="Location.cs" />
@@ -55,9 +56,13 @@
     <Compile Include="Quest.cs" />
     <Compile Include="QuestCompletionItem.cs" />
     <Compile Include="RandomNumberGenerator.cs" />
+    <Compile Include="Sound.cs" />
     <Compile Include="Vendor.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="World.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SoundFiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -55,3 +55,4 @@ D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventure\obj\Debug
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
