@@ -68,3 +68,15 @@ D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter
 D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
 D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.exe
 D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.pdb
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.exe
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.pdb
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.exe
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.pdb
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\bin\Debug\Engine.dll
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\bin\Debug\Engine.pdb
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
+D:\C#fundamentals\TheFighter\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache

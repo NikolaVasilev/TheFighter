@@ -43,6 +43,7 @@
     <Compile Include="Constants\SoundPath.cs" />
     <Compile Include="Enums\ItemId.cs" />
     <Compile Include="Interfaces\ILivingCreature.cs" />
+    <Compile Include="Interfaces\Ilocation.cs" />
     <Compile Include="Interfaces\IMonster.cs" />
     <Compile Include="Interfaces\IQuest.cs" />
     <Compile Include="InventoryItem.cs" />

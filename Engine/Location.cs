@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Engine.Interfaces;
 
 namespace Engine
 {
-    public class Location
+    public class Location : Ilocation
     {
         private readonly SortedList<int, int> _monstersAtLocation = new SortedList<int, int>();
 

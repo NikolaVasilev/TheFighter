@@ -28,3 +28,8 @@ D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter
 D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
 D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\Engine\obj\Debug\Engine.dll
 D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\Engine\obj\Debug\Engine.pdb
+D:\C#fundamentals\TheFighter\SuperAdventure\Engine\bin\Debug\Engine.dll
+D:\C#fundamentals\TheFighter\SuperAdventure\Engine\bin\Debug\Engine.pdb
+D:\C#fundamentals\TheFighter\SuperAdventure\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+D:\C#fundamentals\TheFighter\SuperAdventure\Engine\obj\Debug\Engine.dll
+D:\C#fundamentals\TheFighter\SuperAdventure\Engine\obj\Debug\Engine.pdb
