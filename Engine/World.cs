@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Engine.Enums;
 
 namespace Engine
 {
@@ -16,17 +17,6 @@ namespace Engine
 
         public const int UNSELLABLE_ITEM_PRICE = -1;
 
-        public const int ITEM_ID_RUSTY_SWORD = 1;
-        public const int ITEM_ID_RAT_TAIL = 2;
-        public const int ITEM_ID_PIECE_OF_FUR = 3;
-        public const int ITEM_ID_SNAKE_FANG = 4;
-        public const int ITEM_ID_SNAKESKIN = 5;
-        public const int ITEM_ID_CLUB = 6;
-        public const int ITEM_ID_HEALING_POTION = 7;
-        public const int ITEM_ID_SPIDER_FANG = 8;
-        public const int ITEM_ID_SPIDER_SILK = 9;
-        public const int ITEM_ID_ADVENTURER_PASS = 10;
-        public const int ITEM_ID_BOTTLE_OF_ROM = 11;
 
         public const int MONSTER_ID_RAT = 1;
         public const int MONSTER_ID_SNAKE = 2;
@@ -58,35 +48,35 @@ namespace Engine
 
         private static void PopulateItems()
         {
-            _items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5, 5));
-            _items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails", 1));
-            _items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur", 1));
-            _items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs", 2));
-            _items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins", 3));
-            _items.Add(new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 3, 10, 10));
-            _items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5, 3));
-            _items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs", 1));
-            _items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks", 1));
-            _items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
-            _items.Add(new Item(ITEM_ID_BOTTLE_OF_ROM, "Bottle of rom", "Bottles of rom", 2));
+            _items.Add(new Weapon((int)ItemId.RustySword, "Rusty sword", "Rusty swords", 0, 5, 5));
+            _items.Add(new Item((int)ItemId.RatTail, "Rat tail", "Rat tails", 1));
+            _items.Add(new Item((int)ItemId.PieceOfFur, "Piece of fur", "Pieces of fur", 1));
+            _items.Add(new Item((int)ItemId.SnakeFang, "Snake fang", "Snake fangs", 2));
+            _items.Add(new Item((int)ItemId.Snakeskin, "Snakeskin", "Snakeskins", 3));
+            _items.Add(new Weapon((int)ItemId.Club, "Club", "Clubs", 3, 10, 10));
+            _items.Add(new HealingPotion((int)ItemId.HealingPotion, "Healing potion", "Healing potions", 5, 3));
+            _items.Add(new Item((int)ItemId.SpiderFang, "Spider fang", "Spider fangs", 1));
+            _items.Add(new Item((int)ItemId.SpiderSilk, "Spider silk", "Spider silks", 1));
+            _items.Add(new Item((int)ItemId.AdventurerPass, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
+            _items.Add(new Item((int)ItemId.BottleOfRom, "Bottle of rom", "Bottles of rom", 2));
         }
 
         private static void PopulateMonsters()
         {
             Monster rat = new Monster(MONSTER_ID_RAT, "Rat", 5, 3, 10, 3, 3);
-            rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RAT_TAIL), 75, false));
-            rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PIECE_OF_FUR), 75, true));
+            rat.LootTable.Add(new LootItem(ItemByID((int)ItemId.RatTail), 75, false));
+            rat.LootTable.Add(new LootItem(ItemByID((int)ItemId.PieceOfFur), 75, true));
 
             Monster snake = new Monster(MONSTER_ID_SNAKE, "Snake", 5, 3, 10, 3, 3);
-            snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKE_FANG), 75, false));
-            snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKESKIN), 75, true));
+            snake.LootTable.Add(new LootItem(ItemByID((int)ItemId.SnakeFang), 75, false));
+            snake.LootTable.Add(new LootItem(ItemByID((int)ItemId.Snakeskin), 75, true));
 
             Monster giantSpider = new Monster(MONSTER_ID_GIANT_SPIDER, "Giant spider", 20, 5, 40, 10, 10);
-            giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_FANG), 75, true));
-            giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
+            giantSpider.LootTable.Add(new LootItem(ItemByID((int)ItemId.SpiderFang), 75, true));
+            giantSpider.LootTable.Add(new LootItem(ItemByID((int)ItemId.SpiderSilk), 25, false));
 
             Monster drunkIdiot = new Monster(MONSTER_ID_DRUNK_IDIOT, "Drunk idiot", 6, 10, 15, 8, 10);
-            drunkIdiot.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BOTTLE_OF_ROM), 75, true));
+            drunkIdiot.LootTable.Add(new LootItem(ItemByID((int)ItemId.BottleOfRom), 75, true));
 
             _monsters.Add(rat);
             _monsters.Add(snake);
@@ -102,9 +92,9 @@ namespace Engine
                     "Clear the alchemist's garden",
                     "Kill rats in the alchemist's garden and bring back 3 rat tails. You will receive a healing potion and 10 gold pieces.", 20, 10);
 
-            clearAlchemistGarden.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_RAT_TAIL), 3));
+            clearAlchemistGarden.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID((int)ItemId.RatTail), 3));
 
-            clearAlchemistGarden.RewardItem = ItemByID(ITEM_ID_HEALING_POTION);
+            clearAlchemistGarden.RewardItem = ItemByID((int)ItemId.HealingPotion);
 
             Quest clearFarmersField =
                 new Quest(
@@ -112,9 +102,9 @@ namespace Engine
                     "Clear the farmer's field",
                     "Kill snakes in the farmer's field and bring back 3 snake fangs. You will receive an adventurer's pass and 20 gold pieces.", 20, 20);
 
-            clearFarmersField.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_SNAKE_FANG), 3));
+            clearFarmersField.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID((int)ItemId.SnakeFang), 3));
 
-            clearFarmersField.RewardItem = ItemByID(ITEM_ID_ADVENTURER_PASS);
+            clearFarmersField.RewardItem = ItemByID((int)ItemId.AdventurerPass);
 
             _quests.Add(clearAlchemistGarden);
             _quests.Add(clearFarmersField);
@@ -127,10 +117,10 @@ namespace Engine
 
             Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "You see a fountain.");
             Vendor bobTheRatCatcher = new Vendor("Bob the Rat-Catcher");
-            bobTheRatCatcher.AddItemToInventory(ItemByID(ITEM_ID_PIECE_OF_FUR), 5);
-            bobTheRatCatcher.AddItemToInventory(ItemByID(ITEM_ID_RAT_TAIL), 3); 
-            bobTheRatCatcher.AddItemToInventory(ItemByID(ITEM_ID_RUSTY_SWORD), 3);
-            bobTheRatCatcher.AddItemToInventory(ItemByID(ITEM_ID_BOTTLE_OF_ROM), 2);
+            bobTheRatCatcher.AddItemToInventory(ItemByID((int)ItemId.PieceOfFur), 5);
+            bobTheRatCatcher.AddItemToInventory(ItemByID((int)ItemId.RatTail), 3); 
+            bobTheRatCatcher.AddItemToInventory(ItemByID((int)ItemId.RustySword), 3);
+            bobTheRatCatcher.AddItemToInventory(ItemByID((int)ItemId.BottleOfRom), 2);
             townSquare.VendorWorkingHere = bobTheRatCatcher;
 
             Location alchemistHut = new Location(LOCATION_ID_ALCHEMIST_HUT, "Alchemist's hut", "There are many strange plants on the shelves.");
@@ -147,7 +137,7 @@ namespace Engine
             Location farmersField = new Location(LOCATION_ID_FARM_FIELD, "Farmer's field", "You see rows of vegetables growing here.");
             farmersField.AddMonster(MONSTER_ID_SNAKE, 100);
 
-            Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "There is a large, tough-looking guard here.", ItemByID(ITEM_ID_ADVENTURER_PASS));
+            Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "There is a large, tough-looking guard here.", ItemByID((int)ItemId.AdventurerPass));
 
             Location bridge = new Location(LOCATION_ID_BRIDGE, "Bridge", "A stone bridge crosses a wide river.");
             farmersField.AddMonster(MONSTER_ID_DRUNK_IDIOT, 100);

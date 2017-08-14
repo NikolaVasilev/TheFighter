@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Engine.Interfaces;
 
 namespace Engine
 {
-    public class Monster : LivingCreature
+    public class Monster : LivingCreature, IMonster
     {
         public int ID { get; set; }
         public string Name { get; set; }

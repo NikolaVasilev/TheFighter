@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\SoundPath.cs" />
+    <Compile Include="Enums\ItemId.cs" />
+    <Compile Include="Interfaces\ILivingCreature.cs" />
+    <Compile Include="Interfaces\IMonster.cs" />
+    <Compile Include="Interfaces\IQuest.cs" />
     <Compile Include="InventoryItem.cs" />
     <Compile Include="LivingCreature.cs" />
     <Compile Include="Location.cs" />
@@ -63,6 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SoundFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

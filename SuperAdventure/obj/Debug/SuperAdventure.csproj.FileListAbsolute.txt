@@ -56,3 +56,15 @@ D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventure\obj\Debug
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
 D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
 D:\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.exe
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\bin\Debug\SuperAdventure.pdb
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\bin\Debug\Engine.dll
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\bin\Debug\Engine.pdb
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.exe
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventure\obj\Debug\SuperAdventure.pdb

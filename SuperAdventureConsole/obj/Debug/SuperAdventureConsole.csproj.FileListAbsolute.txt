@@ -12,3 +12,6 @@ D:\C# fundamentals\TheFighter\SuperAdventure\TheFighter\SuperAdventureConsole\ob
 D:\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.csprojResolveAssemblyReference.cache
 D:\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.exe
 D:\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.pdb
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.csprojResolveAssemblyReference.cache
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.exe
+D:\Programming\SoftUni\C# Fundamentals Module\Advanced-C#\TeamProject\TheFighter\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.pdb

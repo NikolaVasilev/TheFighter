@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel;
+using Engine.Interfaces;
 
 namespace Engine
 {
-    public class LivingCreature : INotifyPropertyChanged
+    public abstract class LivingCreature : INotifyPropertyChanged, ILivingCreature
     {
         private int _currentHitPoints;
 
@@ -20,7 +21,7 @@ namespace Engine
 
         public bool IsDead { get { return CurrentHitPoints <= 0; } }
 
-        public LivingCreature(int currentHitPoints, int maximumHitPoints)
+        protected LivingCreature(int currentHitPoints, int maximumHitPoints)
         {
             CurrentHitPoints = currentHitPoints;
             MaximumHitPoints = maximumHitPoints;
