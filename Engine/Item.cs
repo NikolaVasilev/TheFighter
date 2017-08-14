@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Engine.Interfaces;
 
 namespace Engine
 {
-    public class Item
+    public abstract class Item : IItem
     {
         public int ID { get; set; }
         public string Name { get; set; }
