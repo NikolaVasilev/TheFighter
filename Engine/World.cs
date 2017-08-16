@@ -54,16 +54,26 @@ namespace Engine
         {
             //new Weapon((int)ItemId.RustySword, "Rusty sword", "Rusty swords", 0, 5, 5)
             _items.Add(itemFactory.CreateItem("Weapon", new object[] { (int)ItemId.RustySword, "Rusty sword", "Rusty swords", 0, 5, 5 }));
-            _items.Add(new JunkItem((int)ItemId.RatTail, "Rat tail", "Rat tails", 1));
-            _items.Add(new JunkItem((int)ItemId.PieceOfFur, "Piece of fur", "Pieces of fur", 1));
-            _items.Add(new JunkItem((int)ItemId.SnakeFang, "Snake fang", "Snake fangs", 2));
-            _items.Add(new JunkItem((int)ItemId.Snakeskin, "Snakeskin", "Snakeskins", 3));
-            _items.Add(new Weapon((int)ItemId.Club, "Club", "Clubs", 3, 10, 10));
-            _items.Add(new HealingPotion((int)ItemId.HealingPotion, "Healing potion", "Healing potions", 5, 3));
-            _items.Add(new JunkItem((int)ItemId.SpiderFang, "Spider fang", "Spider fangs", 1));
-            _items.Add(new JunkItem((int)ItemId.SpiderSilk, "Spider silk", "Spider silks", 1));
-            _items.Add(new JunkItem((int)ItemId.AdventurerPass, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
-            _items.Add(new JunkItem((int)ItemId.BottleOfRom, "Bottle of rom", "Bottles of rom", 2));
+            //_items.Add(new JunkItem((int)ItemId.RatTail, "Rat tail", "Rat tails", 1));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.RatTail, "Rat tail", "Rat tails", 1}));
+            //_items.Add(new JunkItem((int)ItemId.PieceOfFur, "Piece of fur", "Pieces of fur", 1));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.PieceOfFur, "Piece of fur", "Pieces of fur", 1 }));
+            // _items.Add(new JunkItem((int)ItemId.SnakeFang, "Snake fang", "Snake fangs", 2));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.SnakeFang, "Snake fang", "Snake fangs", 2}));
+            // _items.Add(new JunkItem((int)ItemId.Snakeskin, "Snakeskin", "Snakeskins", 3));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.Snakeskin, "Snakeskin", "Snakeskins", 3 }));
+            // _items.Add(new Weapon((int)ItemId.Club, "Club", "Clubs", 3, 10, 10));
+            _items.Add(itemFactory.CreateItem("Weapon", new object[] { (int)ItemId.Club, "Club", "Clubs", 3, 10, 10 }));
+            //_items.Add(new HealingPotion((int)ItemId.HealingPotion, "Healing potion", "Healing potions", 5, 3));
+            _items.Add(itemFactory.CreateItem("HealingPotion", new object[] { (int)ItemId.HealingPotion, "Healing potion", "Healing potions", 5, 3 }));
+            //_items.Add(new JunkItem((int)ItemId.SpiderFang, "Spider fang", "Spider fangs", 1));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.SpiderFang, "Spider fang", "Spider fangs", 1 }));
+            //_items.Add(new JunkItem((int)ItemId.SpiderSilk, "Spider silk", "Spider silks", 1));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.SpiderSilk, "Spider silk", "Spider silks", 1 }));
+            //_items.Add(new JunkItem((int)ItemId.AdventurerPass, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.AdventurerPass, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE }));
+            //_items.Add(new JunkItem((int)ItemId.BottleOfRom, "Bottle of rom", "Bottles of rom", 2));
+            _items.Add(itemFactory.CreateItem("JunkItem", new object[] { (int)ItemId.BottleOfRom, "Bottle of rom", "Bottles of rom", 2 }));
         }
 
         private static void PopulateMonsters()
