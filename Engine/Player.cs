@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Xml;
+using Engine.Constants;
 using Engine.Enums;
 using Engine.Interfaces;
 
 namespace Engine
 {
-    public class Player : LivingCreature
+    public class Player : LivingCreature, ISound
     {
         private int _gold;
         private int _experiencePoints;
@@ -189,6 +190,7 @@ namespace Engine
             if(CurrentLocation.LocationToNorth != null)
             {
                 MoveTo(CurrentLocation.LocationToNorth);
+                this.MakeSound(SoundPath.DirectionBtn);
             }
         }
 
@@ -197,6 +199,7 @@ namespace Engine
             if(CurrentLocation.LocationToEast != null)
             {
                 MoveTo(CurrentLocation.LocationToEast);
+                this.MakeSound(SoundPath.DirectionBtn);
             }
         }
 
@@ -205,6 +208,7 @@ namespace Engine
             if(CurrentLocation.LocationToSouth != null)
             {
                 MoveTo(CurrentLocation.LocationToSouth);
+                this.MakeSound(SoundPath.DirectionBtn);
             }
         }
 
@@ -213,13 +217,14 @@ namespace Engine
             if(CurrentLocation.LocationToWest != null)
             {
                 MoveTo(CurrentLocation.LocationToWest);
+                this.MakeSound(SoundPath.DirectionBtn);
             }
         }
 
         public void UseWeapon(Weapon weapon)
         {
             int damage = RandomNumberGenerator.NumberBetween(weapon.MinimumDamage, weapon.MaximumDamage);
-
+            this.MakeSound(SoundPath.UseWeapon);
             if(damage == 0)
             {
                 RaiseMessage("You missed the " + CurrentMonster.Name);
@@ -267,7 +272,7 @@ namespace Engine
         public void UsePotion(HealingPotion potion)
         {
             RaiseMessage("You drink a " + potion.Name);
-
+            this.MakeSound(SoundPath.UsePotion);
             HealPlayer(potion.AmountToHeal);
 
             RemoveItemFromInventory(potion);
@@ -547,6 +552,12 @@ namespace Engine
             {
                 OnMessage(this, new MessageEventArgs(message, addExtraNewLine));
             }
+        }
+
+        public void MakeSound(string filePath)
+        {
+            System.Media.SoundPlayer makeSound = new System.Media.SoundPlayer(filePath);
+            makeSound.PlaySync();
         }
     }
 }

@@ -33,3 +33,8 @@ D:\C#fundamentals\TheFighter\SuperAdventure\Engine\bin\Debug\Engine.pdb
 D:\C#fundamentals\TheFighter\SuperAdventure\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
 D:\C#fundamentals\TheFighter\SuperAdventure\Engine\obj\Debug\Engine.dll
 D:\C#fundamentals\TheFighter\SuperAdventure\Engine\obj\Debug\Engine.pdb
+C:\Users\Asus\Desktop\TheFighter\Engine\bin\Debug\Engine.dll
+C:\Users\Asus\Desktop\TheFighter\Engine\bin\Debug\Engine.pdb
+C:\Users\Asus\Desktop\TheFighter\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Desktop\TheFighter\Engine\obj\Debug\Engine.dll
+C:\Users\Asus\Desktop\TheFighter\Engine\obj\Debug\Engine.pdb
