@@ -8,10 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Engine;
-<<<<<<< HEAD
-=======
 using Engine.Constants;
->>>>>>> 1e0fd880d16c45d524c7ee65e10f610755d2fc97
 using Engine.Interfaces;
 
 namespace SuperAdventure
