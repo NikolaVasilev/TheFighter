@@ -18,7 +18,7 @@ namespace Engine
         public void AddItemToInventory(Item itemToAdd, int quantity = 1)
         {
             InventoryItem item = Inventory.SingleOrDefault(ii => ii.Details.ID == itemToAdd.ID);
-
+            
             if (item == null)
             {
                 // They didn't have the item, so add it to their inventory

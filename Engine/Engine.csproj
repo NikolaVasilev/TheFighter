@@ -47,6 +47,7 @@
     <Compile Include="Interfaces\Ilocation.cs" />
     <Compile Include="Interfaces\IMonster.cs" />
     <Compile Include="Interfaces\IQuest.cs" />
+    <Compile Include="Interfaces\ISound.cs" />
     <Compile Include="InventoryItem.cs" />
     <Compile Include="JunkItem.cs" />
     <Compile Include="LivingCreature.cs" />
@@ -63,7 +64,6 @@
     <Compile Include="Quest.cs" />
     <Compile Include="QuestCompletionItem.cs" />
     <Compile Include="RandomNumberGenerator.cs" />
-    <Compile Include="Sound.cs" />
     <Compile Include="Vendor.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="World.cs" />

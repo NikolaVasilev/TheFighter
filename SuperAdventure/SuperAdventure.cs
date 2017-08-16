@@ -171,25 +171,21 @@ namespace SuperAdventure
         private void btnNorth_Click(object sender, EventArgs e)
         {
             _player.MoveNorth();
-            Sound.MakeSound(SoundPath.DirectionBtn);
         }
 
         private void btnEast_Click(object sender, EventArgs e)
         {
             _player.MoveEast();
-            Sound.MakeSound(SoundPath.DirectionBtn);
         }
 
         private void btnSouth_Click(object sender, EventArgs e)
         {
             _player.MoveSouth();
-            Sound.MakeSound(SoundPath.DirectionBtn);
         }
 
         private void btnWest_Click(object sender, EventArgs e)
         {
             _player.MoveWest();
-            Sound.MakeSound(SoundPath.DirectionBtn);
         }
 
         private void btnUseWeapon_Click(object sender, EventArgs e)

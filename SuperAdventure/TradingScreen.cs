@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Engine;
+using Engine.Constants;
+using Engine.Interfaces;
 
 namespace SuperAdventure
 {
-    public partial class TradingScreen : Form
+    public partial class TradingScreen : Form, ISound
     {
 
         private Player _currentPlayer;
@@ -20,7 +22,7 @@ namespace SuperAdventure
         {
             _currentPlayer = player;
             InitializeComponent();
-
+            this.MakeSound(SoundPath.EnterTrade);
             // Style, to display numeric column values
             DataGridViewCellStyle rightAlignedCellStyle = new DataGridViewCellStyle();
             rightAlignedCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -139,7 +141,7 @@ namespace SuperAdventure
                 {
                     // Remove one of these items from the player's inventory
                     _currentPlayer.RemoveItemFromInventory(itemBeingSold);
-
+                    this.MakeSound(SoundPath.SellItem);
                     // Give the player the gold for the item being sold.
                     _currentPlayer.Gold += itemBeingSold.Price;
                 }
@@ -162,13 +164,14 @@ namespace SuperAdventure
                 {
                     // Add one of the items to the player's inventory
                     _currentPlayer.AddItemToInventory(itemBeingBought);
-
+                    this.MakeSound(SoundPath.BuyItem);
                     // Remove the gold to pay for the item
                     _currentPlayer.Gold -= itemBeingBought.Price;
                 }
                 else
                 {
                     MessageBox.Show("You do not have enough gold to buy the " + itemBeingBought.Name);
+                    this.MakeSound(SoundPath.NotEnoughMoney);
                 }
             }
         }
@@ -180,6 +183,13 @@ namespace SuperAdventure
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+            this.MakeSound(SoundPath.TradeClose);
+        }
+
+        public void MakeSound(string filePath)
+        {
+            System.Media.SoundPlayer makeSound = new System.Media.SoundPlayer(filePath);
+            makeSound.PlaySync();
         }
     }
 }
