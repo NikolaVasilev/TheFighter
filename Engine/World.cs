@@ -4,15 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Engine.Enums;
+using Engine.Factories;
+using Engine.Interfaces;
 
 namespace Engine
 {
     public class World
     {
-        private static readonly List<Item> _items = new List<Item>();
+        private static readonly IList<IItem> _items = new List<IItem>();
         private static readonly List<Monster> _monsters = new List<Monster>();
         private static readonly List<Quest> _quests = new List<Quest>();
         private static readonly List<Location> _locations = new List<Location>();
+
+        private static IItemFactory itemFactory = new ItemFactory();
 
 
         public const int UNSELLABLE_ITEM_PRICE = -1;
@@ -48,7 +52,8 @@ namespace Engine
 
         private static void PopulateItems()
         {
-            _items.Add(new Weapon((int)ItemId.RustySword, "Rusty sword", "Rusty swords", 0, 5, 5));
+            //new Weapon((int)ItemId.RustySword, "Rusty sword", "Rusty swords", 0, 5, 5)
+            _items.Add(itemFactory.CreateItem("Weapon", new object[] { (int)ItemId.RustySword, "Rusty sword", "Rusty swords", 0, 5, 5 }));
             _items.Add(new JunkItem((int)ItemId.RatTail, "Rat tail", "Rat tails", 1));
             _items.Add(new JunkItem((int)ItemId.PieceOfFur, "Piece of fur", "Pieces of fur", 1));
             _items.Add(new JunkItem((int)ItemId.SnakeFang, "Snake fang", "Snake fangs", 2));
@@ -183,7 +188,7 @@ namespace Engine
             _locations.Add(spiderField);
         }
 
-        public static Item ItemByID(int id)
+        public static IItem ItemByID(int id)
         {
             return _items.SingleOrDefault(x => x.ID == id);
         }

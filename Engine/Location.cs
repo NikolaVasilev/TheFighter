@@ -11,7 +11,7 @@ namespace Engine
         public int ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public Item ItemRequiredToEnter { get; set; }
+        public IItem ItemRequiredToEnter { get; set; }
         public Quest QuestAvailableHere { get; set; }
         public Vendor VendorWorkingHere { get; set; }
         public Location LocationToNorth { get; set; }
@@ -24,7 +24,7 @@ namespace Engine
         public bool DoesNotHaveAnItemRequiredToEnter { get { return ItemRequiredToEnter == null; } }
 
         public Location(int id, string name, string description,
-            Item itemRequiredToEnter = null, Quest questAvailableHere = null)
+            IItem itemRequiredToEnter = null, Quest questAvailableHere = null)
         {
             ID = id;
             Name = name;

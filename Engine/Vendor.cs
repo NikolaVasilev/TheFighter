@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using Engine.Interfaces;
 
 namespace Engine
 {
@@ -15,7 +16,7 @@ namespace Engine
             Inventory = new BindingList<InventoryItem>();
         }
 
-        public void AddItemToInventory(Item itemToAdd, int quantity = 1)
+        public void AddItemToInventory(IItem itemToAdd, int quantity = 1)
         {
             InventoryItem item = Inventory.SingleOrDefault(ii => ii.Details.ID == itemToAdd.ID);
 

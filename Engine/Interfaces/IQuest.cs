@@ -9,7 +9,7 @@ namespace Engine.Interfaces
         string Description { get;}
         int RewardExperiencePoints { get;}
         int RewardGold { get;}
-        Item RewardItem { get;}
+        IItem RewardItem { get;}
         IList<QuestCompletionItem> QuestCompletionItems { get;}
     }
 }

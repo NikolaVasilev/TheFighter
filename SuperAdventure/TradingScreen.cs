@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Engine;
+using Engine.Interfaces;
 
 namespace SuperAdventure
 {
@@ -129,7 +130,7 @@ namespace SuperAdventure
                 var itemID = dgvMyItems.Rows[e.RowIndex].Cells[0].Value;
 
                 // Get the Item object for the selected item row
-                Item itemBeingSold = World.ItemByID(Convert.ToInt32(itemID));
+                IItem itemBeingSold = World.ItemByID(Convert.ToInt32(itemID));
 
                 if (itemBeingSold.Price == World.UNSELLABLE_ITEM_PRICE)
                 {
@@ -155,7 +156,7 @@ namespace SuperAdventure
                 var itemID = dgvVendorItems.Rows[e.RowIndex].Cells[0].Value;
 
                 // Get the Item object for the selected item row
-                Item itemBeingBought = World.ItemByID(Convert.ToInt32(itemID));
+                IItem itemBeingBought = World.ItemByID(Convert.ToInt32(itemID));
 
                 // Check if the player has enough gold to buy the item
                 if (_currentPlayer.Gold >= itemBeingBought.Price)

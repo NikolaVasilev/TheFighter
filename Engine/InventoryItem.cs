@@ -4,12 +4,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Engine.Interfaces;
 
 namespace Engine
 {
     public class InventoryItem : INotifyPropertyChanged
     {
-        private Item _details;
+        private IItem _details;
         private int _quantity;
         public event PropertyChangedEventHandler PropertyChanged;
         public int ItemID
@@ -21,7 +22,7 @@ namespace Engine
         {
             get { return Details.Price; }
         }
-        public Item Details
+        public IItem Details
         {
             get { return _details; }
             set
@@ -50,7 +51,7 @@ namespace Engine
             }
         }
 
-        public InventoryItem(Item details, int quantity)
+        public InventoryItem(IItem details, int quantity)
         {
             Details = details;
             Quantity = quantity;

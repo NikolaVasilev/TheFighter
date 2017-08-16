@@ -182,7 +182,7 @@ namespace SuperAdventureConsole
             }
             else if (input.Contains("attack"))
             {
-                if (_player.CurrentLocation.MonsterLivingHere == null)
+                if (_player.CurrentLocation.HasAMonster == null)
                 {
                     Console.WriteLine("There is nothing here to attack");
                 }

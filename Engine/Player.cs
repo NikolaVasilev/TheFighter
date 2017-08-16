@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Xml;
 using Engine.Enums;
+using Engine.Interfaces;
 
 namespace Engine
 {
@@ -275,7 +276,7 @@ namespace Engine
             LetTheMonsterAttack();
         }
 
-        public void AddItemToInventory(Item itemToAdd, int quantity = 1)
+        public void AddItemToInventory(IItem itemToAdd, int quantity = 1)
         {
             InventoryItem existingItemInInventory = Inventory.SingleOrDefault(ii => ii.Details.ID == itemToAdd.ID);
 
@@ -291,7 +292,7 @@ namespace Engine
             RaiseInventoryChangedEvent(itemToAdd);
         }
 
-        public void RemoveItemFromInventory(Item itemToRemove, int quantity = 1)
+        public void RemoveItemFromInventory(IItem itemToRemove, int quantity = 1)
         {
             InventoryItem item = Inventory.SingleOrDefault(ii => ii.Details.ID == itemToRemove.ID && ii.Quantity >= quantity);
 
@@ -527,7 +528,7 @@ namespace Engine
             node.Attributes.Append(attribute);
         }
 
-        private void RaiseInventoryChangedEvent(Item item)
+        private void RaiseInventoryChangedEvent(IItem item)
         {
             if(item is Weapon)
             {

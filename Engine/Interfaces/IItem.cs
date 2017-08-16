@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine.Interfaces
 {
-    interface IItem
+    public interface IItem
     {
        int ID { get; set; }
        string Name { get; set; }
